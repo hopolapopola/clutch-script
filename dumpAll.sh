@@ -6,6 +6,7 @@ tail -n 1 /var/mobile/clutch.txt.tmp > /var/mobile/clutch.txt
 rm /var/mobile/clutch.txt.tmp
 num=$(cat /var/mobile/clutch.txt) 
 i=1
+((num++)
 while [ $i -lt $num ]
 do
     clutch -d $i
